@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!--
+Tommy Yasi
+toya1800
+toya1800@student.miun.se
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TouchTyping</title>
+    <link rel="stylesheet"
+          type = "text/css"
+          href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<header>
+    <img class="main" src="img/laptop.png" alt = "Cartoon keyboard"/>
+    <h1>TouchTyping</h1>
+</header>
+
+<main>
+    <div id="fullBox">
+        <div id="box">
+            <p id="choiceBox">
+                <label id="textInfo"> Choose text <br/>
+                    <select id="textChoice" name="textChoice">
+                        <option value="football"> Football </option>
+                        <option value="wind"> Wind </option>
+                        <option value="theBogeyBeast"> The Bogey Beast </option>
+                    </select>
+                </label>
+            </p>
+        </div>
+    </div>
+
+    <!-- Full text will be shown bellow depending on the choice of text -->
+    <div class="fullTextBox">
+        <h2 class="textName"></h2>
+        <h3 class="author"></h3>
+        <p class="text"></p>
+    </div>
+
+    <!-- Input box -->
+    <div class="inputArea">
+        <label>
+            <input placeholder="Type here..." type="text" id="inputBox" />
+        </label>
+        <p>
+            <img src="img/Play.png" id="button" class="pressButton" alt="startStopButton">
+        </p>
+    </div>
+
+    <div class="statsBox">
+        <div class="row1">
+            Gross WPM: <var id="gWPM"></var> <br/> Net WPM: <var id="nWPM"></var>
+        </div>
+        <div class="row2">
+            Accuracy: <var id="accuracy"></var> <br/> Errors: <var id="errors"></var>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <h6>Copyright &copy; 2020 Tommy Yasi. No rights reserved.</h6>
+    <address>
+        <a href="mailto:toya1800@student.miun.se">Contact me!</a>
+    </address>
+</footer>
+
+</body>
+</html>
